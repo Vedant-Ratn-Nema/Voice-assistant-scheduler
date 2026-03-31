@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Scheduler AI Agent</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Smart Scheduler AI Agent</h1>
+      <p class="subtitle">
+        Speak or type to schedule a meeting from your Google Calendar availability.
+      </p>
+
+      <section id="chat" class="chat"></section>
+
+      <form id="chatForm" class="composer">
+        <input
+          id="textInput"
+          type="text"
+          placeholder="Example: Find me a 45-minute slot Tuesday afternoon"
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+
+      <div class="voice-actions">
+        <button id="micBtn" type="button">🎤 Push to Talk</button>
+        <label>
+          <input id="ttsToggle" type="checkbox" checked />
+          Speak agent responses
+        </label>
+      </div>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
